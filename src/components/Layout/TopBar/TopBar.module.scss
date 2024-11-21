@@ -1,0 +1,45 @@
+.topBar {
+  border-bottom: solid 2px rgb(246, 249, 56);
+  display: flex;
+
+  top: 0;
+  position: sticky;
+  z-index: 5;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 129, 6, 1) 100%
+  );
+
+  -webkit-box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.19);
+  background-color: #ffffff;
+
+  .image {
+    > a {
+      > img {
+        margin: 5px;
+        border-radius: 1rem;
+        border: solid 2px rgb(7, 173, 60);
+        object-fit: cover; /* Recorta la imagen sin deformarla */
+        object-position: center;
+        max-width: 9rem;
+      }
+    }
+  }
+  h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #023d0e;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
