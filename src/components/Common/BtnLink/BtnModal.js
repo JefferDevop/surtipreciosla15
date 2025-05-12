@@ -26,7 +26,7 @@ export function BtnModal() {
   };
 
   function handleClickAdmin() {
-    router.push("https://surtipreciosla15.catalogointeractivo.com.co/admin-dashboard/");
+    router.push("https://surtipreciosla15.conexion.bar/admin-dashboard/");
   }
 
   function handleClickClient() {
