@@ -1,5 +1,5 @@
 
-export const BASE_API = 'https://surtipreciosla15.catalogointeractivo.com.co'
+export const BASE_API = 'https://surtipreciosla15.conexion.bar'
 // process.env.NEXT_PUBLIC_API
 export const SEARCH_HISTORY = "search-history";
 export const CART = "cart";
