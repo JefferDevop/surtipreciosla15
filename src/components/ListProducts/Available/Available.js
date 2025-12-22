@@ -19,6 +19,8 @@ import { BsWhatsapp } from "react-icons/bs";
 
 import styles from "./Available.module.scss";
 
+
+
 export function Available(props) {
   const { product } = props;
   const { user } = useAuth();
@@ -31,6 +33,12 @@ export function Available(props) {
   const [idProduct, setIdPropduct] = useState();
   const [propductWhatsApp, setPropductWhatsApp] = useState("");
   const [propductAlternaWhatsApp, setPropductAlternaWhatsApp] = useState("");
+
+
+  const format = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  };
+
 
   const toggleModal = () => {
     setIsOpen(!isOpen);
@@ -89,13 +97,22 @@ export function Available(props) {
       </Link>
 
       <h5>{product.productData.name_extend}</h5>
+
+      
       <div className={styles.product}>
         <div className={styles.price}>
-          {/* <h6>$ {format(product.productData.price1)}</h6>
-
-          {user && <h6>Mayor $ {format(product.productData.price2)}</h6>} */}
+         
+          {product.productData.price1 > 0 && (
+            <label>Al detal $ {format(product.productData.price1)}</label>
+          )}
+          {product.productData.price2 > 0 && (
+            <label>Por mayor $ {format(product.productData.price2)}</label>
+          )}
         </div>
       </div>
+
+
+      
       <Button
         color="primary"
         onClick={() => addProductId(product.productData.codigo)}
