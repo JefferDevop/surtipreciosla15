@@ -31,7 +31,7 @@ export function Redes() {
   return (
     <div className={styles.redes}>   
         <p>Calle 15 # 9 - 60 Cali - Centro</p>
-        <p>CEL: 313 636 4253 - 314 572 1972</p>  
+        <p>CEL: 314 572 1972</p>  
     </div>
   );
 }
