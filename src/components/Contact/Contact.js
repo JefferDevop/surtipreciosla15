@@ -8,8 +8,7 @@ export function Contact() {
         <h1>SURTIPRECIOS LA 15</h1>
         <div className={styles.phone}>
           <h5>Líneas de atención</h5>
-          <ul>       
-            <li>(+57) 313 636 4253</li>
+          <ul>                 
             <li>(+57) 314 572 1972</li>          
           </ul>
         </div>
