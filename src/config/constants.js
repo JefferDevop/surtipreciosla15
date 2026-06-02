@@ -1,5 +1,5 @@
 
-export const BASE_API = 'https://surtipreciosla15.conexion.bar'
+export const BASE_API = 'https://surtipreciosla15.cosmoqa.store'
 // process.env.NEXT_PUBLIC_API
 export const SEARCH_HISTORY = "search-history";
 export const CART = "cart";
